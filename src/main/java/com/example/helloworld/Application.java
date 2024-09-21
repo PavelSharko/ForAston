@@ -1,12 +1,14 @@
 package com.example.helloworld;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.servlet.DispatcherServlet;
 
-@SpringBootApplication
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRegistration;
+
 public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        // Здесь может быть код для запуска приложения в виде standalone, если это необходимо.
     }
 }
