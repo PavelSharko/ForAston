@@ -1,20 +1,14 @@
 package com.example.helloworld;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.web.servlet.DispatcherServlet;
 
-@SpringBootApplication
-public class Application extends SpringBootServletInitializer {
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRegistration;
 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(Application.class);
-    }
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        // Здесь может быть код для запуска приложения в виде standalone, если это необходимо.
     }
-
 }
