@@ -1,13 +1,14 @@
-package com.example.helloworld;
+package com.example.helloworld.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+//@RequestMapping("/api")
 public class HelloController {
 
     @GetMapping("/")
     public String sayHello() {
-        return "Hello Worldвпвпапвапыаавыва";
+        return "Hello Worldаыавваы";
     }
 }
